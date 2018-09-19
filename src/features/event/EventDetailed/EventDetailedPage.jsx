@@ -27,7 +27,6 @@ const EventDetailedPage = ({ event }) => {
         <EventDetailedInfo event={event} />
         <EventDetailedChat />
       </Grid.Column>
-
       <Grid.Column width={6}>
         <EventDetailedSidebar attendees={event.attendees} />
       </Grid.Column>
