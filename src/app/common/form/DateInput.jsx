@@ -11,11 +11,12 @@ const DateInput = ({
   meta: { touched, error },
   ...rest
 }) => {
+  console.log("placeholder", placeholder);
   return (
     <Form.Field error={touched && !!error} width={width}>
       <DatePicker
         {...rest}
-        placeholdertext={placeholder}
+        placeholderText={placeholder}
         selected={value ? moment(value) : null}
         onChange={onChange}
         {...restInput}
